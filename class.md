@@ -1,17 +1,17 @@
 # Classes and object
-,,,
+
 
 * object are entities in the real world.
 * classes are like blueprint of these entities.
 
-*                    Teacher
+
 
 
 
 
 # syntax
-
-* classes teachers{
+```cpp
+class teachers{
     properties/attributes
     method(function)/member function
 };
