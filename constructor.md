@@ -56,6 +56,8 @@ string deparment;
 string subject;
 double salary;
 
+//parametarized
+
 teacher(string n, string sub, string d, double sal){
     name =n;
     subject=sub;
@@ -68,14 +70,6 @@ teacher(string n, string sub, string d, double sal){
 // teacher(){
 //     dept="computer science"
 // }
-
-//parametarized
-teacher(string n, string sub, string d, double sal){
-    name =n;
-    subject=sub;
-    deparment= d;
-    salary= sal;
-}
 
 
 
