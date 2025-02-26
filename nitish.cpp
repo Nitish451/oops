@@ -41,36 +41,90 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// using namespace std;
+
+// class student{
+//     public:
+//     string name;
+//     string age;
+
+// };
+
+// class teacher {
+//     public:
+//     string subject;
+//     double salary;
+   
+
+// };
+
+// class TA :public student , public teacher{
+  
+// };
+
+// int main(){
+//    TA t1;
+//    t1.name="nitish";
+//    t1.age="seventy five";
+//    t1.subject = "engineering";
+//    cout<<t1.name<<"\n";
+//    cout<<t1.age<<"\n";
+//    cout<<t1.subject;
+
+//     return 0;
+// }
+
+
+// # include<iostream>
+// using namespace std;
+
+// class print{
+//     public:
+//     void show(int x){
+//         cout<<"x"<<x;
+//     }
+
+
+   
+//     void show(char ch){
+        
+//         cout<<"char: "<<ch;
+//     }
+// };
+
+// int main (){
+//     print p1;
+//     p1.show('R');
+//     return 0;
+// }
+
+
 #include <iostream>
 using namespace std;
 
-class student{
+class parent {
     public:
-    string name;
-    string age;
-
+    void getinfo(){
+        cout<<" parent class ";
+    }
+    virtual void hello(){
+        cout<<"hello from parent class";
+    }
 };
-
-class teacher {
+class child : public parent {
     public:
-    string subject;
-    double salary;
-   
+    void getinfo(){
+        cout<<"child class ";
+    }
+    void hello(){
+        cout<<"hello from child class";
+    }
 
 };
 
-class TA :public student , public teacher{
-  
-};
-
-int main(){
-   TA t1;
-   t1.name="nitish";
-   t1.age="seventy five";
-   t1.subject = "engineering";
-   cout<<t1.name<<"\n";
-   cout<<t1.age<<"\n";
-   cout<<t1.subject;
-
+int main (){
+    child c1;
+    c1.hello();
     return 0;
 }

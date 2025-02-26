@@ -6,13 +6,6 @@
 # Types of inheritance
 
 * sigle-level inheritance(parent------>child, examle person student)
-* multi-level inheritance(parent--parent-->child)
-* multuple inheritence (parent       parent)
-                          \             /
-                           \   child   /
-* hierarchial inhetance (parent)   
-                         /     \
-                    child       child                          
 ```cpp
 
 #include <iostream>
@@ -48,17 +41,8 @@ class student : public person{
         cout<<"roll no:  "<<roll<<"\n";
     }
 };
-
-int main(){
-    student s1;
-    s1.name = "nitish";
-    s1.age = "twenty";
-    s1.roll = 56 ;
-    s1.getinfo();
-    return 0;
-}
 ```
-# Example of multi-level inheritence
+* multi-level inheritance(parent--parent-->child)
 
 ```cpp 
 #include <iostream>
@@ -97,8 +81,10 @@ int main(){
     return 0;
 }
 ```
-# Ecample of multiple inheritence
-```cpp
+* multuple inheritence (parent       parent)
+                          \             /
+                           \   child   /
+ ```cpp
 #include <iostream>
 using namespace std;
 
@@ -132,3 +118,9 @@ int main(){
 
     return 0;
 }
+```                          
+* hierarchial inhetance (parent)   
+                         /     \
+                    child       child                          
+```cpp
+
