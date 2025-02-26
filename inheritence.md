@@ -1,11 +1,12 @@
 # Inheritence
+* *Allowing a class (called a subclass or derived class) to inherit properties and behavior from another class (called a superclass or base class), facilitating code reuse and creating a hierarchy of classes.
 * when propertised and member function of base class are passed on to the derived class 
 * it is used for reusability.
 * private member are never inherite.
 
 # Types of inheritance
 
-* sigle-level inheritance(parent------>child, examle person student)
+### sigle-level inheritance(parent------>child, examle person student)
 ```cpp
 
 #include <iostream>
@@ -42,7 +43,7 @@ class student : public person{
     }
 };
 ```
-* multi-level inheritance(parent--parent-->child)
+### multi-level inheritance(parent--parent-->child)
 
 ```cpp 
 #include <iostream>
@@ -81,7 +82,7 @@ int main(){
     return 0;
 }
 ```
-* multuple inheritence (parent       parent)
+### multuple inheritence (parent       parent)
                           \             /
                            \   child   /
  ```cpp
@@ -119,7 +120,7 @@ int main(){
     return 0;
 }
 ```                          
-* hierarchial inhetance (parent)   
+### hierarchial inhetance (parent)   
                          /     \
                     child       child                          
 ```cpp
