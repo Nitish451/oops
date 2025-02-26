@@ -68,3 +68,35 @@ int main (){
 ```
 ### b.virtual function
 * A virtual function is a member function that you expect to be redefined in derived class;
+* it is dynamic in nature 
+* define by keyworn 'virtual' inside a base class and always declare with base class and overriden in child class.
+* it is called during run time.
+```cpp
+#include <iostream>
+using namespace std;
+
+class parent {
+    public:
+    void getinfo(){
+        cout<<" parent class ";
+    }
+    virtual void hello(){
+        cout<<"hello from parent class";
+    }
+};
+class child : public parent {
+    public:
+    void getinfo(){
+        cout<<"child class ";
+    }
+    void hello(){
+        cout<<"hello from child class";
+    }
+
+};
+
+int main (){
+    child c1;
+    c1.hello();
+    return 0;
+}
