@@ -100,31 +100,64 @@
 // }
 
 
-#include <iostream>
+// #include <iostream>
+// using namespace std;
+
+// class parent {
+//     public:
+//     void getinfo(){
+//         cout<<" parent class ";
+//     }
+//     virtual void hello(){
+//         cout<<"hello from parent class";
+//     }
+// };
+// class child : public parent {
+//     public:
+//     void getinfo(){
+//         cout<<"child class ";
+//     }
+//     void hello(){
+//         cout<<"hello from child class";
+//     }
+
+// };
+
+// int main (){
+//     child c1;
+//     c1.hello();
+//     return 0;
+// }
+
+
+// #include<iostream>
+// using namespace std;
+
+// class shape{ // abstract class
+//     virtual void draw()=0;//pure virtual function 
+// };
+// class circle : public shape{
+//     public:
+//     void draw(){
+//         cout<<"draw a circle";
+//     }
+
+// };
+// int main(){
+//     circle c1;
+//     c1.draw();
+//     return 0;
+// }
+#include<iostream>
 using namespace std;
+void fun(){
+    static int x=0;
+    cout<<"x= "<<x<<"\n";
+    x++;
+}
 
-class parent {
-    public:
-    void getinfo(){
-        cout<<" parent class ";
-    }
-    virtual void hello(){
-        cout<<"hello from parent class";
-    }
-};
-class child : public parent {
-    public:
-    void getinfo(){
-        cout<<"child class ";
-    }
-    void hello(){
-        cout<<"hello from child class";
-    }
-
-};
-
-int main (){
-    child c1;
-    c1.hello();
-    return 0;
+int main(){
+    fun();
+    fun();
+    fun();
 }
