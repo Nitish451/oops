@@ -42,7 +42,26 @@ class student : public person{
         cout<<"roll no:  "<<roll<<"\n";
     }
 };
+int main(){
+    student p;
+    p.name = "nitish yadav";
+    p.age = "tweenty three";
+    p.roll = 34;
+    p.getinfo();
+    return 0;
+}
 ```
+* output 
+i am a paret 
+i am a child
+name:  nitish yadav
+age:  tweenty three
+roll no:  34
+
+
+``cpp
+
+
 ### multi-level inheritance(parent--parent-->child)
 
 ```cpp 
@@ -70,10 +89,10 @@ class grandStudent : public student{
 
 int main(){
     grandStudent s1;
-    s1.name = "nitish yadav";
+    s1.name = "akanksha singh";
     s1.age = "tweenty three";
     s1.roll = 34;
-    s1.resercharea = "computer science";
+    s1.resercharea = "defence";
     cout<<"name= "<<s1.name<<"\n";
     cout<<"age= "<<s1.age<<"\n";
     cout<<"roll= "<<s1.roll<<"\n";
@@ -82,6 +101,77 @@ int main(){
     return 0;
 }
 ```
+* output
+name= akanksha singh
+age= tweenty three
+roll= 34
+resecharea= defence
+
+# OR
+```cpp
+#include <iostream>
+using namespace std;
+
+class person{
+    public:
+    string name;
+    string age;
+
+};
+
+class student : public person{
+    public:
+    //name, age , rollno
+   int roll;
+
+};
+
+class grandStudent : public student{
+    public:
+    string resercharea;
+
+    grandStudent(string name, string age, int roll, string resercharea){
+        this->name=name;
+        this->age=age;
+        this->roll=roll;
+        this->resercharea=resercharea;
+    }
+
+    void getinfo(){
+        cout<<"name= "<<name<<endl;
+        cout<<"roll= "<<roll<<endl;
+        cout<<"age= "<<age<<endl;
+        cout<<"resercharea= "<<resercharea<<endl;
+    }
+};
+
+int main(){
+    
+    string n,a,res;
+    int ro;
+    cout<<"enter name";
+    cin>>n;
+    cout<<"enter reserch area";
+    cin>>res;
+    cout<<"enter roll";
+    cin>>ro;
+    cout<<"enter age";
+    cin>>a;
+    grandStudent s1(n,a,ro,res);
+  s1.getinfo();
+
+    return 0;
+}
+```
+* output
+enter namenitish
+enter reserch areadegence
+enter roll34
+enter age33
+name= nitish
+roll= 34
+age= 33
+
 ### multuple inheritence (parent       parent)
                           \             /
                            \   child   /

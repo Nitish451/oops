@@ -35,6 +35,9 @@ int main (){
     return 0;
 }
 ```
+* output
+char: R
+
 ### b. constructor overloading
 ### c. operator overloading
 
@@ -66,6 +69,8 @@ int main (){
     return 0;
 }
 ```
+* output
+child class 
 ### b.virtual function
 * A virtual function is a member function that you expect to be redefined in derived class;
 * it is dynamic in nature 
@@ -100,3 +105,6 @@ int main (){
     c1.hello();
     return 0;
 }
+```
+* output
+hello from child class

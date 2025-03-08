@@ -14,3 +14,30 @@ int main(){
     fun();
     fun();
 }
+```
+* output
+x=0;
+x=1;
+x=2;
+
+# without using cpp
+
+```cpp
+#include<iostream>
+using namespace std;
+void fun(){
+     int x=0;
+    cout<<"x= "<<x<<"\n";
+    x++;
+}
+
+int main(){
+    fun();
+    fun();
+    fun();
+}
+```
+* output
+x= 0
+x= 0
+x= 0
