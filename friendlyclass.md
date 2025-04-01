@@ -1,8 +1,9 @@
 # C++ Program to demonstrate the
  * functioning of a friend class
  ```cpp
-// C++ Program to demonstrate the
-// functioning of a friend class
+* C++ Program to demonstrate the
+* functioning of a friend class
+ ```cpp
 #include <iostream>
 using namespace std;
 
@@ -49,7 +50,9 @@ int main()
     fri.display(g);
 //     return 0;
  }
-
+ ```
+ # To cheack wheather a numaber is odd or even using friend class 
+```cpp
 #include<iostream>
 using namespace std;
 
