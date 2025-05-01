@@ -45,3 +45,37 @@
         return 0;
 
     }
+
+    # write a program to get a target value by adding two number , print index of that two number
+    ```cpp
+    #include <iostream>
+using namespace std;
+int main()
+{
+    int n, target;
+    int arr[50];
+    cout << "enter the size of array: ";
+    cin >> n;
+    cout << "enter the data of array: ";
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+    cout << "enter the target value: ";
+    cin >> target;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 1; j < n; j++)
+        {
+            if (arr[i] + arr[j] == target)
+            {
+                cout << "target found at inedex: " << i << "and" << j;
+                return 0;
+            }
+        }
+    }
+
+    return 0;
+}
+
+

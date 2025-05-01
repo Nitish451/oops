@@ -76,12 +76,41 @@ int main(){
 ```
 # write a program to print fibonacci series till nth term
 ```cpp
-
+#include<iostream>
+using namespace std;
+int main(){
+  int a=0, b=1,c,i;
+  int n;
+  cout<<"enter the size : ";
+  cin>>n;
+  cout<<a<<endl;
+  cout<<b<<endl;
+  for(i=2; i<n; i++){
+    c=a+b;
+    cout<<c<<endl;
+    a=b;
+    b=c;
+  }
+  return 0;
+}
 
 
 ```
 # write a program to sum of the series 1+1/2+1/3......+1/n till nth term;
 ```cpp
+#include<iostram>
+using namespace std;
+int  main(){
+  int n;
+  cout<<"eneter the sizw: ";
+  cin>>n;
+  for(int i=1; i=<n; i++){
+    int sum= i+1/n;
+  }
+  cout<<sum<<endl;
+  return 0;
+}
+
 
 ```
 # Write a program to sum the series: 1+1/2!+1/3!+1/4!+..+1/n! till nth term  
